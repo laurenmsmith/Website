@@ -1,0 +1,115 @@
+    body {
+      font-size: 16px;
+      font-family: 'Avenir Next', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      margin: 20px auto;
+      width: 1200px;
+      background-color:darkturquoise;
+      /* background-image: url('potat.jpeg'); */
+      /* background-repeat: no-repeat; */
+      /* background-attachment: fixed; */
+      /* background-size: cover; */
+    }  
+    b {
+      font-weight: 600;
+    }
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .me {
+      padding: 10px;
+      height: 204px;
+      width: 176px;
+      display: block;
+      margin: auto;
+    }
+
+    .leftpanel {
+      float: left;
+      width: 300px;
+      color: #6c6c6c;
+    }
+
+    .leftpanel a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .leftpanel ul {
+      margin-left: 20px;
+      padding: 0;
+    }
+
+    .leftpanel li {
+      display: block;
+      padding: 11px 16px;
+    }
+
+    .leftpanel li:hover {
+      background-color: orange;
+    }
+
+    .rightpanel th {
+      text-align: left
+    }
+
+    .rightpanel {
+      padding-left: 310px;
+      padding-top: 5px;
+      color: white;
+    }
+
+    .rightpanel th,
+    td {
+      padding: 15px;
+      font-weight: normal;
+    }
+
+    .bold-headers th {
+      font-weight: 600;
+    }
+
+    .table-row {
+      padding-bottom: 6px;
+    }
+
+    .list-item {
+      padding-bottom: 6px;
+    }
+
+.github-logo,
+.twitter-logo,
+.linkedin-logo,
+.gmail-logo {
+  height: 100px;}
+
+  .pic {
+    padding: 10px;
+    height: 256px;
+    width: 300px;
+    /* display: block; */
+    margin: auto;
+  }
+
+  .me_mri {
+    margin-left: 500px;
+    border-radius: 50%;
+    border: 24px solid orange;
+    height: 300px;
+    width: 300px;
+  }
+
+  .travel {
+    border-radius: 50%;
+    border: 24px solid orange;
+    height: 300px;
+    width: 300px;
+  }
+
+  .rightpanel a {
+    text-decoration: none;
+    color:white;
+    text-decoration: underline;
+  }
