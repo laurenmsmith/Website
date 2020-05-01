@@ -1,13 +1,13 @@
 {
     "papers": [
         {
-            "title": "Diffusion Dispersion Imaging: Mapping OGSE Frequency Dependence in the Human Brain",
-            "date": "2019-11-01",
-            "date_show": "Nov 2019",
-            "authors": "Arbabi, A., Kai, J., Khan A.R., Baron, C.A.",
+            "title": "Optimizing SNR for multi‐metabolite hyperpolarized carbon‐13 MRI using a hybrid flip‐angle scheme",
+            "date": "2020-02-03",
+            "date_show": "Feb 2020",
+            "authors": "Smith, L.M., Wade, T.P., Friesen‐Waldner, L.J., McKenzie, C.A.",
             "journal": "Magnetic Resonance in Medicine",
-            "doi": "10.1002/mrm.28083",
-            "doi_link": "https://doi.org/10.1002/mrm.28083"
+            "doi": "10.1002/mrm.28194",
+            "doi_link": "https://doi.org/10.1002/mrm.28194"
         },
         {
             "title": "A framework for evaluating correspondence between brain images using anatomical fiducials",
