@@ -21,28 +21,28 @@
     ],
     "talks": [
         {
-            "title": "Assessing the reliability and reproducibility of NeuroBundle Extraction and Evaluation Resource, an automated tool for clustering diffusion tractography",
-            "date": "2019-03-26",
-            "date_show": "Mar 2019",
-            "authors": "Kai, J., Khan A.R.",
-            "location": "London, ON, Canada",
-            "proceeding": "Proceedings of the 17th annual meeting of Imaging Network Ontario. pp 105."
+            "title": "Optimizing signal-to-noise ratio for hyperpolarized carbon-13 MRI of the placenta",
+            "date": "2018-03-29",
+            "date_show": "Mar 2018",
+            "authors": "Smith, L.M., Wade T.P., Akbari, A., Rockel, C., Friesen-Waldner, L.J., McKenzie, C.A.",
+            "location": "Toronto, ON, Canada",
+            "proceeding": "Proceedings of the 16th annual meeting of Imaging Network Ontario. pp 65."
         },
         {
-            "title": "Investigating U-shape fibers from data-driven clustering of white matter tractography",
-            "date": "2018-06-15",
+            "title": "Hyperpolarized [1-13C]Pyruvate Magnetic Resonance Imaging of Placentae Associated with Intrauterine Growth Restriction",
+            "date": "2018-06-18",
             "date_show": "Jun 2018",
-            "authors": "Kai, J., Kasa, L.W., Peters, T.M., Khan, A.R.",
+            "authors": "Friesen–Waldner, L.J., Rockel, C., Sinclair, K., Wade, T.P., Smith, L.M., Moselhy, M., Vander Tuin, C., Chen, A., de Vrijer, B., Regnault, T., McKenzie, C.A.",
             "location": "Paris, France",
-            "proceeding": "Proceedings of the 26th annual meeting of International Society for Magnetic Resonance in Medicine. pp 43."
+            "proceeding": "Proceedings of the 26th annual meeting of International Society for Magnetic Resonance in Medicine. No.0990."
         },
         {
-            "title": "Investigating the relationship of myelin and axonal white matter microstructure using longitudinal relaxation mapping and restricted diffusion",
-            "date": "2017-03-18",
-            "date_show": "Mar 2017",
-            "authors": "Kai, J., Kasa, L.W., Peters, T.M., Khan, A.R.",
-            "location": "London, ON, Canada",
-            "proceeding": "Proceedings of the 15th annual meeting of Imaging Network Ontario. pp 93."
+            "title": "Optimizing Hyperpolarized Carbon-13 Magnetic Resonance Imaging of the Placenta using a Hybrid Flip Angle Scheme",
+            "date": "2018-02-06",
+            "date_show": "Feb 2018",
+            "authors": "Smith, L.M., Wade T.P., Akbari, A., Rockel, C., Friesen-Waldner, L.J., McKenzie, C.A.",
+            "location": "Atlanta, GA, United States of America",
+            "proceeding": "ISMRM WOrkshop on MRI of the Placenta."
         }
     ],
     "posters": [
