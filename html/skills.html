@@ -11,13 +11,27 @@
 <body>
   <div class="leftpanel">
     <img class="me" src="../me.jpg">
+
+    <a target="_blank" href="https://twitter.com/laurenmsmiith">
+      <img class="twitter-logo" src="images/twitter-logo.png">
+    </a>
+  </th>
+  <th>
+    <a target="_blank" href="https://www.linkedin.com/in/lauren-smith-535b096a/">
+      <img class="linkedin-logo" src="images/linkedin-logo.png">
+    </a>
+  </th>
+  <th>
+    <a target="_blank" href="mailto:lsmit229@uwo.ca?Subject=Contacting%20from%20Website">
+      <img class="gmail-logo" src="images/gmail-logo.png">
+    </a>
+
     <ul>
       <li><a href="../index.html">About</a></li>
       <li><a href=experience.html>Education</a></li>
       <li><a href=research.html>Research</a></li>
       <li><a href=skills.html>Publications</a></li>
       <li><a href=work.html>Work & Volunteer Experience</a></li>
-      <li><a href=contact.html>Contact</a></li>
     </ul>
   </div>
 
@@ -32,7 +46,6 @@
     <p class="important">
 
 
-
            <!-- Tab links -->
            <div id="tabs">
             <button class="tablinks" onclick="openPublication(event, 'papers')" id="defaultOpen">Papers</button>
@@ -40,12 +53,14 @@
             <button class="tablinks" onclick="openPublication(event, 'posters')">Posters</button>
         </div>
 
+        <div id="app" >
+
         <!-- Tab content -->
         <div id="papers" class="tabcontent">
             <table class="table1">
                 <tr class="tr1">
-                    <th class="th1">Date</th>
-                    <th class="th1" style="width: 85%;">Publication</th>
+                    <th class="th1"><b>Date</b></th>
+                    <th class="th1" style="width: 85%;"><b>Publication</b></th>
                 </tr>
                 <tr v-for="paper in info.papers">
                     <td class="td1" valign="top">{{ paper.date_show }}</td>
@@ -61,10 +76,10 @@
         <div id="talks" class="tabcontent">
           <table class="table1">
             <tr class="tr1">
-                <th class="th1">Date</th>
-                <th class="th1" style="width: 85%;">Publication</th>
+                <th class="th1"><b>Date</b></th>
+                <th class="th1" style="width: 85%;"><b>Publication</b></th>
             </tr>
-            <tr v-for="paper in info.papers">
+            <tr v-for="talk in info.talks">
                 <td class="td1" valign="top">{{ talk.date_show }}</td>
                 <td  class="td1" valign="top">{{ talk.authors }}<br>
                     {{ talk.title }}.
@@ -79,8 +94,8 @@
 
           <table class="table1">
             <tr class="tr1">
-                <th class="th1">Date</th>
-                <th class="th1" style="width: 85%;">Publication</th>
+                <th class="th1"><b>Date</b></th>
+                <th class="th1" style="width: 85%;"><b>Publication</b></th>
             </tr>
             <tr v-for="poster in info.posters">
                 <td class="td1" valign="top">{{ poster.date_show }}</td>
@@ -95,6 +110,8 @@
 
     </p>
   </div>
+
+</div>
 
   <script>
     // Publication tabs
@@ -148,20 +165,6 @@
         app.info.papers.sort(function(a,b){return b.date > a.date? 1 : -1})
         app.info.talks.sort(function(a,b){return b.date > a.date? 1 : -1})
     })
-
-
-    // Pull out nav bar
-    // Closes sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#nav-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#nav-wrapper").toggleClass("active");
-    });
 </script>
 
 </body>
