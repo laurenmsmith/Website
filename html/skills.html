@@ -20,18 +20,150 @@
       <li><a href=contact.html>Contact</a></li>
     </ul>
   </div>
-  
+
   <div class="rightpanel">
-    <h1>Lauren Smith</h1>
-    <p>I have been fortunate enough to have opportunities to present my research to a variety of aduiences. Take a look below!</p>
+    <h1 style="color:orange;">Lauren Smith</h1>
+    <p>I have been fortunate enough to have opportunities to present my research to a variety of aduiences. 
+    <br> Take a look below!</p>
       <img class="pic" src="../research.png">
       <img class="pic" src="../presentation.jpeg">
       <br>
       <i> <font size="-1">Last updated May 2020</font size></i>
     <p class="important">
-      <h3>Put table here :)</h3>
+
+
+
+           <!-- Tab links -->
+           <div id="tabs">
+            <button class="tablinks" onclick="openPublication(event, 'papers')" id="defaultOpen">Papers</button>
+            <button class="tablinks" onclick="openPublication(event, 'talks')">Talks</button>
+            <button class="tablinks" onclick="openPublication(event, 'posters')">Posters</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="papers" class="tabcontent">
+            <table class="table1">
+                <tr class="tr1">
+                    <th class="th1">Date</th>
+                    <th class="th1" style="width: 85%;">Publication</th>
+                </tr>
+                <tr v-for="paper in info.papers">
+                    <td class="td1" valign="top">{{ paper.date_show }}</td>
+                    <td  class="td1" valign="top">{{ paper.authors }}<br>
+                        {{ paper.title }}.
+                        <em>{{ paper.journal }}</em>.
+                        <a v-bind:href="paper.doi_link" target="_blank"> doi:{{paper.doi}}</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="talks" class="tabcontent">
+          <table class="table1">
+            <tr class="tr1">
+                <th class="th1">Date</th>
+                <th class="th1" style="width: 85%;">Publication</th>
+            </tr>
+            <tr v-for="paper in info.papers">
+                <td class="td1" valign="top">{{ talk.date_show }}</td>
+                <td  class="td1" valign="top">{{ talk.authors }}<br>
+                    {{ talk.title }}.
+                    <em>{{ talk.proceeding }}</em>.
+                        {{ talk.location }}.
+                </td>
+            </tr>
+        </table>
+        </div>
+
+        <div id="posters" class="tabcontent">
+
+          <table class="table1">
+            <tr class="tr1">
+                <th class="th1">Date</th>
+                <th class="th1" style="width: 85%;">Publication</th>
+            </tr>
+            <tr v-for="poster in info.posters">
+                <td class="td1" valign="top">{{ poster.date_show }}</td>
+                <td  class="td1" valign="top">{{ poster.authors }}<br>
+                    {{ poster.title }}.
+                    <em>{{ poster.proceeding }}</em>.
+                        {{ poster.location }}.
+                </td>
+            </tr>
+        </table>
+        </div>
+
     </p>
   </div>
+
+  <script>
+    // Publication tabs
+    function openPublication(evt, publication) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(publication).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+    </script>
+
+    <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+    // Set up JSON dictionary
+    var app = new Vue({
+        el: '#app',
+        data: {
+            info: {
+            }
+        }
+    })
+
+    // Reads profile.json
+    var url = "../profile.json" //fix this after
+    if (window.location.hostname=="localhost"){
+        url = "../profile.json"
+    }
+    $.getJSON(url, function(data){
+        console.log("data is", data);
+        app.info = data;
+        app.info.papers.sort(function(a,b){return b.date > a.date? 1 : -1})
+        app.info.talks.sort(function(a,b){return b.date > a.date? 1 : -1})
+    })
+
+
+    // Pull out nav bar
+    // Closes sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#nav-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#nav-wrapper").toggleClass("active");
+    });
+</script>
+
 </body>
 
 </html>

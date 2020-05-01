@@ -1,13 +1,9 @@
     body {
       font-size: 16px;
       font-family: 'Avenir Next', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-      margin: 20px auto;
+      margin-top: 0px;
+      margin-left: 0px;
       width: 1200px;
-      background-color:darkturquoise;
-      /* background-image: url('potat.jpeg'); */
-      /* background-repeat: no-repeat; */
-      /* background-attachment: fixed; */
-      /* background-size: cover; */
     }  
     b {
       font-weight: 600;
@@ -19,7 +15,7 @@
     }
 
     .me {
-      padding: 10px;
+      padding: 30px;
       height: 204px;
       width: 176px;
       display: block;
@@ -27,9 +23,12 @@
     }
 
     .leftpanel {
+      position: fixed;
       float: left;
+      height: 100vh;
       width: 300px;
       color: #6c6c6c;
+      background-color:darkturquoise;
     }
 
     .leftpanel a {
@@ -56,9 +55,10 @@
     }
 
     .rightpanel {
+        margin-left: 30px;
       padding-left: 310px;
       padding-top: 5px;
-      color: white;
+      color:black;
     }
 
     .rightpanel th,
@@ -79,17 +79,19 @@
       padding-bottom: 6px;
     }
 
-.github-logo,
 .twitter-logo,
-.linkedin-logo,
+.linkedin-logo
+{
+    height: 100px;}
 .gmail-logo {
-  height: 100px;}
+  height: 150px;}
 
   .pic {
     padding: 10px;
     height: 256px;
     width: 300px;
     margin: auto;
+    margin-left:50px;
   }
 
   .me_mri {
@@ -108,7 +110,7 @@
 
   .rightpanel a {
     text-decoration: none;
-    color:white;
+    color:darkturquoise;
     text-decoration: underline;
   }
 
@@ -124,7 +126,66 @@
       .mri_paragraph {
         border-radius: 5px;
         padding: 10px;
-        color:teal;
+        color:white;
         width: 300px;
         height: 100px;
-        background-color:lightgoldenrodyellow;
+        background-color:darkturquoise;
+      }
+
+      #tabs {
+        overflow: hidden;
+    }
+
+    #tabs button {
+        position: relative;
+        background:darkturquoise;
+        padding: .5vw 3.5vw;
+        float: left;
+        font-size: 1.75vw;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        border-radius: 1vw 1vw 0 0;
+        transition: 0.3s;
+    }
+
+    #tabs button.active {
+        background-color: orange;
+        background-image: none;
+        color: #fff;
+    }
+
+    table, th, td {
+        border: white .2vw;
+        padding: .5vw;
+    }
+
+    .table1, .th1, .td1 {
+        border: orange solid .2vw;
+        padding: .5vw;
+        width: 100%;
+        border-radius: 10px;
+        background-color: orange;
+        border-top-left-radius: 0%;
+    }
+
+    .th1 {
+        font-size: 1.5vw;
+        padding-left: 1vw;
+        width: 15%;
+        border: orange solid .2vw;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .td1 {
+        text-align: justify;
+        font-size: 1.3vw;
+        padding-right: 3vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
+        border:orange solid .2vw;
+        border-radius: 10px;
+        background-color: white;
+    }
+
