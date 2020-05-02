@@ -108,9 +108,26 @@
       border-radius: 50%;
       height: 300px;
       width: 300px;
-      border:24px solid orange;
+      border:12px solid orange;
       overflow: hidden;
   }
+
+
+  .circle2 {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border:12px solid orange;
+    overflow: hidden;
+    padding-top: 0;
+    margin-left: 775px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+}
 
   .circle img {
       width: 450px;
