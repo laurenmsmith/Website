@@ -174,7 +174,7 @@
         background:darkturquoise;
         padding: .5vw 3.5vw;
         float: left;
-        font-size: 1.75vw;
+        font-size: 16px;
         text-transform: uppercase;
         text-decoration: none;
         color: white;
@@ -203,7 +203,7 @@
     }
 
     .th1 {
-        font-size: 1.5vw;
+        font-size: 16px;
         padding-left: 1vw;
         width: 15%;
         border: orange solid .2vw;
@@ -213,7 +213,7 @@
 
     .td1 {
         text-align: left;
-        font-size: 1.3vw;
+        font-size: 16px;
         padding-right: 3vw;
         padding-left: 1vw;
         padding-bottom: 1vw;
